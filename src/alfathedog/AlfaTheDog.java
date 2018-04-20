@@ -5,6 +5,8 @@
  */
 package alfathedog;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author steven
@@ -42,12 +44,12 @@ public class AlfaTheDog extends javax.swing.JFrame {
         getContentPane().setLayout(null);
 
         login.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
-        login.setText("LOGIN:");
+        login.setText("Usuario:");
         getContentPane().add(login);
-        login.setBounds(150, 150, 50, 27);
+        login.setBounds(150, 150, 70, 27);
 
         pasword.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
-        pasword.setText("PASSWORD:");
+        pasword.setText("Contraseña:");
         getContentPane().add(pasword);
         pasword.setBounds(150, 180, 90, 27);
         getContentPane().add(usuario);
@@ -96,6 +98,23 @@ public class AlfaTheDog extends javax.swing.JFrame {
     private void entrarMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_entrarMouseClicked
         String Login="djs";
         String Password="djs";
+        
+        String Pass= new String(contraseña.getPassword());
+        
+        if (usuario.getText().equals(Login) && Pass.equals(Password)){
+            
+            Clientes CL= new Clientes();
+            
+            CL.setVisible(true);
+            
+            dispose();
+            
+     
+        }
+        else {
+            JOptionPane.showMessageDialog(this, "usuario o contraseña incorrectos");
+        }
+      
     }//GEN-LAST:event_entrarMouseClicked
 
     /**
