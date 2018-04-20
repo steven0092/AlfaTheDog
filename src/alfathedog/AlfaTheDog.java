@@ -7,7 +7,7 @@ package alfathedog;
 
 /**
  *
- * @author DJS jininj
+ * @author DJS 
  */
 public class AlfaTheDog {
 
