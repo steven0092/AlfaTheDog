@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author djs
+ * @author djs pepe barcos y putas
  */
 public class AlfaTheDog extends javax.swing.JFrame {
 
