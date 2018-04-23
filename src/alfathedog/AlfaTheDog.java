@@ -9,7 +9,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author djs pepe barcos y putas
+ * @author djs
  */
 public class AlfaTheDog extends javax.swing.JFrame {
 
@@ -18,7 +18,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
      */
     public AlfaTheDog() {
         initComponents();
-        setSize(530, 330);
+        setSize(530, 310);
         this.setLocationRelativeTo(null);
     }
 
@@ -41,6 +41,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setUndecorated(true);
         getContentPane().setLayout(null);
 
         login.setFont(new java.awt.Font("Lucida Grande", 1, 14)); // NOI18N
@@ -53,7 +54,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
         getContentPane().add(pasword);
         pasword.setBounds(150, 180, 90, 27);
         getContentPane().add(usuario);
-        usuario.setBounds(240, 150, 140, 26);
+        usuario.setBounds(240, 150, 140, 24);
 
         contraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -61,7 +62,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
             }
         });
         getContentPane().add(contraseña);
-        contraseña.setBounds(240, 180, 140, 26);
+        contraseña.setBounds(240, 180, 140, 22);
 
         entrar.setText("ENTRAR");
         entrar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -70,7 +71,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
             }
         });
         getContentPane().add(entrar);
-        entrar.setBounds(280, 210, 97, 29);
+        entrar.setBounds(280, 210, 97, 32);
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/logopq.png"))); // NOI18N
