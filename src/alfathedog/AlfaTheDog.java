@@ -5,6 +5,7 @@
  */
 package alfathedog;
 
+import java.time.Clock;
 import javax.swing.JOptionPane;
 
 /**
@@ -38,6 +39,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
         entrar = new javax.swing.JButton();
         logo = new javax.swing.JLabel();
         alfaTheDogNombre = new javax.swing.JLabel();
+        salirbotton = new javax.swing.JButton();
         fondo = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -54,7 +56,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
         getContentPane().add(pasword);
         pasword.setBounds(150, 180, 90, 27);
         getContentPane().add(usuario);
-        usuario.setBounds(240, 150, 140, 20);
+        usuario.setBounds(240, 150, 140, 24);
 
         contraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,7 +64,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
             }
         });
         getContentPane().add(contraseña);
-        contraseña.setBounds(240, 180, 140, 20);
+        contraseña.setBounds(240, 180, 140, 22);
 
         entrar.setText("ENTRAR");
         entrar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -71,7 +73,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
             }
         });
         getContentPane().add(entrar);
-        entrar.setBounds(280, 210, 97, 23);
+        entrar.setBounds(280, 210, 97, 32);
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/logopq.png"))); // NOI18N
@@ -82,6 +84,15 @@ public class AlfaTheDog extends javax.swing.JFrame {
         alfaTheDogNombre.setText("AlfaTheDog");
         getContentPane().add(alfaTheDogNombre);
         alfaTheDogNombre.setBounds(180, 70, 280, 60);
+
+        salirbotton.setText("Salir");
+        salirbotton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salirbottonActionPerformed(evt);
+            }
+        });
+        getContentPane().add(salirbotton);
+        salirbotton.setBounds(430, 10, 56, 32);
 
         fondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/fondo.jpg"))); // NOI18N
@@ -117,6 +128,10 @@ public class AlfaTheDog extends javax.swing.JFrame {
         }
       
     }//GEN-LAST:event_entrarMouseClicked
+
+    private void salirbottonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirbottonActionPerformed
+        System.exit(0);
+    }//GEN-LAST:event_salirbottonActionPerformed
 
     /**
      * @param args the command line arguments
@@ -162,6 +177,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
     private javax.swing.JLabel login;
     private javax.swing.JLabel logo;
     private javax.swing.JLabel pasword;
+    private javax.swing.JButton salirbotton;
     private javax.swing.JTextField usuario;
     // End of variables declaration//GEN-END:variables
 }
