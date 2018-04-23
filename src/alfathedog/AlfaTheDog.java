@@ -54,7 +54,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
         getContentPane().add(pasword);
         pasword.setBounds(150, 180, 90, 27);
         getContentPane().add(usuario);
-        usuario.setBounds(240, 150, 140, 24);
+        usuario.setBounds(240, 150, 140, 20);
 
         contraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,7 +62,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
             }
         });
         getContentPane().add(contraseña);
-        contraseña.setBounds(240, 180, 140, 22);
+        contraseña.setBounds(240, 180, 140, 20);
 
         entrar.setText("ENTRAR");
         entrar.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -71,7 +71,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
             }
         });
         getContentPane().add(entrar);
-        entrar.setBounds(280, 210, 97, 32);
+        entrar.setBounds(280, 210, 97, 23);
 
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/logopq.png"))); // NOI18N
@@ -81,7 +81,7 @@ public class AlfaTheDog extends javax.swing.JFrame {
         alfaTheDogNombre.setFont(new java.awt.Font("SignPainter", 3, 48)); // NOI18N
         alfaTheDogNombre.setText("AlfaTheDog");
         getContentPane().add(alfaTheDogNombre);
-        alfaTheDogNombre.setBounds(180, 70, 190, 60);
+        alfaTheDogNombre.setBounds(180, 70, 280, 60);
 
         fondo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         fondo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/image/fondo.jpg"))); // NOI18N
